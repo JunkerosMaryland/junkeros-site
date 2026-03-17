@@ -64,10 +64,11 @@
       color: var(--dark);
       font-weight: 800;
       font-size: 1.35rem;
+      margin-left: 18px;
     }
     .brand img {
-      width: 120px;
-      height: 120px;
+      width: 160px;
+      height: 160px;
       object-fit: contain;
     }
     .nav-links {
@@ -79,8 +80,20 @@
     .nav-links a {
       color: var(--text);
       font-weight: 700;
-      font-size: .96rem;
+      font-size: .95rem;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #f3f5f7;
+      border: 1px solid var(--border);
+      transition: 0.2s ease;
     }
+    
+    .nav-links a:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    
     .hero {
       background:
         linear-gradient(rgba(12,33,48,.78), rgba(12,33,48,.78)),
@@ -104,18 +117,19 @@
       display: grid;
       grid-template-columns: 1.15fr .85fr;
       gap: 32px;
-      align-items: center;
+      align-items: start;
     }
     .eyebrow {
       display: inline-block;
-      background: rgba(240,125,47,.16);
-      color: #ffd9bf;
-      border: 1px solid rgba(255,255,255,.18);
-      padding: 8px 12px;
+      background: var(--accent);
+      color: white;
+      border: 1px solid var(--accent);
+      padding: 9px 14px;
       border-radius: 999px;
       font-size: .9rem;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 18px;
+      box-shadow: 0 10px 20px rgba(240,125,47,.25);
     }
     .hero h1 {
       font-size: clamp(2.5rem, 5vw, 4.4rem);
@@ -169,6 +183,7 @@
       padding: 28px;
       box-shadow: 0 16px 36px rgba(0,0,0,.20);
       border-top: 6px solid var(--accent);
+      margin-top: 48px;
     }
     .hero-card h3 {
       margin: 0 0 14px;
@@ -312,6 +327,8 @@
   <img src="logo.png" alt="Junkeros Maryland logo">
 </div>
       <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#gallery">Gallery</a>
