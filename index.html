@@ -45,15 +45,14 @@
     .navbar {
       background: var(--white);
       border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
+      position: realtive;
       z-index: 20;
     }
     .navbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 0;
+      padding: 6px 0;
       gap: 18px;
       flex-wrap: wrap;
     }
@@ -78,13 +77,13 @@
       align-items: center;
     }
     .nav-links a {
-      color: var(--text);
+      color: var(--dark);
       font-weight: 700;
       font-size: .95rem;
-      padding: 10px 14px;
+      padding: 10px 16px;
       border-radius: 999px;
-      background: #f3f5f7;
-      border: 1px solid var(--border);
+      background: #fff3ea;
+      border: 1px solid #ffd2b4;
       transition: 0.2s ease;
     }
     
@@ -92,6 +91,7 @@
       background: var(--accent);
       color: white;
       border-color: var(--accent);
+      transform: translateY(-1px);
     }
     
     .hero {
